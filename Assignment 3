@@ -1,0 +1,26 @@
+def right_triangle(a, b, c):
+    # Check the Pythagorean theorem
+    if a**2 + b**2 == c**2:
+        return True
+    elif a**2 + c**2 == b**2:
+        return True
+    elif b**2 + c**2 == a**2:
+        return True
+    else:
+        return False
+
+
+a = float(input("Enter first side: "))
+b = float(input("Enter second side: "))
+c = float(input("Enter third side: "))
+
+if right_triangle(a, b, c):
+    print("The triangle is a right-angled triangle.")
+else:
+    print("The triangle is not a right-angled triangle.")
+
+Output:
+Enter first side:  11
+Enter second side:  60
+Enter third side:  61
+The triangle is a right-angled triangle.
