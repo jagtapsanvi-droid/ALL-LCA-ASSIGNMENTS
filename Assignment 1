@@ -1,0 +1,144 @@
+# 1. LISTS IN PYTHON
+
+fruits = ["Apple", "Banana", "Mango", "Apple"]
+
+print("Original List:", fruits)
+
+
+# 1. append()
+# Adds a new item to the end of the list.
+
+fruits.append("Orange")
+print("After append():", fruits)
+
+
+# 2. insert()
+# Adds an item at a specified position.
+
+fruits.insert(1, "Grapes")
+print("After insert():", fruits)
+
+
+# 3. remove()
+# Removes the first occurrence of a specified item.
+
+fruits.remove("Apple")
+print("After remove():", fruits)
+
+
+# 4. pop()
+# Removes an item from a specified index.
+
+fruits.pop(2)
+print("After pop():", fruits)
+
+
+# 5. reverse()
+# Reverses the order of the items in the list.
+
+fruits.reverse()
+print("After reverse():", fruits)
+
+
+
+# 2. TUPLES IN PYTHON
+
+numbers = (10, 20, 30, 20, 40)
+
+print("Tuple:", numbers)
+
+
+# 1. count()
+# Returns the number of times a specified item occurs.
+
+print("Count of 20:", numbers.count(20))
+
+
+# 2. index()
+# Returns the index of the first occurrence of an item.
+
+print("Index of 30:", numbers.index(30))
+
+
+# Since tuples are immutable, they have only two main
+# built-in methods: count() and index().
+
+# 3. len()
+# Returns the number of items in the tuple.
+
+print("Length of tuple:", len(numbers))
+
+
+# 4. max()
+# Returns the largest item in the tuple.
+
+print("Largest number:", max(numbers))
+
+
+# 5. min()
+# Returns the smallest item in the tuple.
+
+print("Smallest number:", min(numbers))
+
+
+# 3. DICTIONARIES IN PYTHON
+
+student = {
+    "name": "Shritej",
+    "age": 18,
+    "marks": 85
+}
+
+print("Original Dictionary:", student)
+
+
+# 1. keys()
+# Returns all the keys in the dictionary.
+
+print("Keys:", student.keys())
+
+
+# 2. values()
+# Returns all the values in the dictionary.
+
+print("Values:", student.values())
+
+
+# 3. items()
+# Returns all the key-value pairs.
+
+print("Items:", student.items())
+
+
+# 4. get()
+# Returns the value associated with a specified key.
+
+print("Student Name:", student.get("name"))
+
+
+# 5. update()
+# Adds new key-value pairs or updates an existing value.
+
+student.update({"marks": 90})
+print("After update():", student)
+
+
+Output:
+Original List: ['Apple', 'Banana', 'Mango', 'Apple']
+After append(): ['Apple', 'Banana', 'Mango', 'Apple', 'Orange']
+After insert(): ['Apple', 'Grapes', 'Banana', 'Mango', 'Apple', 'Orange']
+After remove(): ['Grapes', 'Banana', 'Mango', 'Apple', 'Orange']
+After pop(): ['Grapes', 'Banana', 'Apple', 'Orange']
+After reverse(): ['Orange', 'Apple', 'Banana', 'Grapes']
+Tuple: (10, 20, 30, 20, 40)
+Count of 20: 2
+Index of 30: 2
+Length of tuple: 5
+Largest number: 40
+Smallest number: 10
+Original Dictionary: {'name': 'Shritej', 'age': 18, 'marks': 85}
+Keys: dict_keys(['name', 'age', 'marks'])
+Values: dict_values(['Shritej', 18, 85])
+Items: dict_items([('name', 'Shritej'), ('age', 18), ('marks', 85)])
+Student Name: Shritej
+After update(): {'name': 'Shritej', 'age': 18, 'marks': 90}
